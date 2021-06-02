@@ -1,0 +1,62 @@
+%======================================================================================== 
+%Preamble. Latex needs all this stuff to work, but it doesn't appear in your document.
+
+\documentclass{article}[12pt]
+\usepackage{geometry}                
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{float}
+\floatstyle{plain}
+\usepackage[]{microtype}
+\usepackage{listings}
+\lstset{
+    literate={~} {$\sim$}{1}
+}
+\usepackage{color}
+\usepackage{epstopdf}
+
+\usepackage{lipsum}
+\newcommand{\eqname}[1]{\tag*{\bf #1}}% Tag equation with name
+%\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=magenta,
+    filecolor=magenta,      
+    urlcolor=blue,
+    citecolor={blue}
+    }
+    
+\usepackage[backend=biber, style=authoryear, uniquename=false,doi=false,isbn=false, url=false, giveninits]{biblatex}
+\addbibresource{Wormreferences.bib}
+
+%\usepackage{biblatex}
+%==========================================================
+% My title, name, and date
+\title{\emph{lin-22}: a Driving Force in the Early Development of \textit{Caenorhabditis elegans}}
+\author{Emma Guimaraes}
+\date{\today}                                         
+%==========================================================
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Methods}
+
+\subsection{}
+
+\section{Results}
+
+\subsection{\emph{lin-22} expression in \emph{C. elegans} embryogenesis}
+
+
+
+
+
+
+\printbibliography
+\end{document}

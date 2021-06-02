@@ -1,0 +1,146 @@
+%======================================================================================== 
+%Preamble. Latex needs all this stuff to work, but it doesn't appear in your document.
+
+\documentclass{article}[12pt]
+\usepackage{geometry}                
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{float}
+\floatstyle{plain}
+\usepackage[]{microtype}
+\usepackage{listings}
+\lstset{
+    literate={~} {$\sim$}{1}
+}
+\usepackage{color}
+\usepackage{epstopdf}
+
+\usepackage{lipsum}
+\newcommand{\eqname}[1]{\tag*{\bf #1}}% Tag equation with name
+%\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=magenta,
+    filecolor=magenta,      
+    urlcolor=blue,
+    citecolor={blue}
+    }
+    
+\usepackage[backend=biber, style=authoryear, uniquename=false,doi=false,isbn=false, url=false, giveninits]{biblatex}
+\addbibresource{Wormreferences.bib}
+
+
+
+%\usepackage{biblatex}
+%==========================================================
+% My title, name, and date
+\title{\emph{lin-22}: a Driving Force in the Early Development of \textit{Caenorhabditis elegans}}
+\author{Emma Guimaraes}
+\date{\today}                                         
+%==========================================================
+
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+%==============This first section is just teaching you how to use LaTeX. It's not part of your paper.
+
+
+
+\section{Using LaTeX}
+
+\subsection{Using LaTex in Overleaf}
+
+It's a pain, but you'll get used to it.  Google to find stuff out, ask each other, \emph{in extremis}, ask me. 
+
+Here I am going to write something else. And how do I italicize something?  In Word you'd use a drop down menu or go command+I or something. But that's too easy for scientists! We like doing stuff the hard way.  This is \emph{how}! And \textbf{bold}.  And ``quote''And you cite \cite{Levin2012}. 
+\subsection{Citation}
+This is how you cite \cite{Levin2012} or \parencite{Goldstein1995}.
+
+\subsection{Figures, Tables \& Equations}
+
+You can put figures directly into the text. If you want to mess with their formatting, look \href{http://en.wikibooks.org/wiki/LaTeX/Floats,_Figures_and_Captions}{here}.
+
+Figure \ref{fig:rpl} is really great. 
+
+\floatstyle{plain}
+\restylefloat{figure}
+\begin{figure}[h]
+\centering
+\includegraphics[width=7cm]{rpl}
+\caption{\emph{rpl} gene expression in \emph{C. elegans} development}
+\label{fig:rpl}
+\end{figure}
+
+Figure \ref{fig:rpl} is a bit of a rubbish figure. You should generate better ones in R by playing with the plot settings --- or use the ggplot2 library. It's very nice, but has quite a steep learning curve. \LaTeX is pretty good about placing figures, but of course if it doesn't have the space on a page, it will put it somewhere that you may not want it. You'll just have to experiment. 
+
+
+Here is how to make a table such as Table \ref{table:things table}:
+\begin{table}[ht]
+\begin{center}
+\begin{tabular}{lrrrrr}%{| p{1cm} | p{1cm} | p{1cm} |p{1cm} |p{1cm} |p{1cm}|}
+\hline
+Things&$r$&$r'$&$n$&$n'$&$w_i$\\
+\hline
+A&10&1&1&10&10 \\
+B&10&6&1&5&5\\
+C&10&3&1&8&8\\
+D&10&2&1&9&9\\
+E&10&5&1&6&6\\
+\hline
+\\
+\end{tabular}
+\caption{The Table's title}
+\label{table:things table}
+\end{center}
+\end{table}
+
+And, finally, here is how to make an equation such as Equation \ref{eqn:nonlin}. These can be as complicated as you please. 
+
+\begin{equation}
+\Delta SD(z)= Var(z_i-\bar z)^2\beta\left(\frac{w_i}{\bar w}, (z_i-\bar z)^2\right)
+\label{eqn:nonlin}
+\end{equation}
+
+
+
+\clearpage
+
+%Your actual paper begins here.=======================
+% You need not use this format, but it's not a bad one. 
+\section{Introduction}
+%some random text
+
+\subsection{A subsection}
+
+\subsubsection{A subsubsection}
+
+\section{Methods}
+
+%Write about the methods you used.  You don't have to give R code, just tell me what packages you used, and if you did anything special tell me what. Nor do you have to use these subsections---they're just examples. 
+
+
+
+
+\section{Results}
+\subsection{\emph{rpl-39} shows dynamic expression levels during early development}
+
+
+\subsection{Many of \emph{rpl-39}'s interactors cluster into three groups}
+
+
+
+\section{Discussion}
+
+
+\section{Conclusions}
+
+\printbibliography
+
+
+\end{document}
