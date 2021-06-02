@@ -1,0 +1,7 @@
+Ensembl Tree in NW Format...
+
+((((((((homo_sapiens/1-236, (pan_paniscus/1-236, pan_troglodytes/1-236)), gorilla_gorilla/1-236), pongo_abelii/1-236), nomascus_leucogenys/1-236), (((((cercocebus_atys/1-236, mandrillus_leucophaeus/1-236), papio_anubis/1-236), ((macaca_fascicularis/1-236, macaca_mulatta/1-236), macaca_nemestrina/1-236)), chlorocebus_sabaeus/1-236), (rhinopithecus_bieti/1-236, rhinopithecus_roxellana/1-236))), (aotus_nancymaae/1-236, (callithrix_jacchus/1-236, (cebus_capucinus/1-236, saimiri_boliviensis_boliviensis/1-236)))), carlito_syrichta/1-236), ((microcebus_murinus/1-236, (prolemur_simus/1-236, propithecus_coquereli/1-236)), otolemur_garnettii/1-236))
+
+Human Excluded...
+
+((((((((pan_paniscus/1-236, pan_troglodytes/1-236), gorilla_gorilla/1-236), pongo_abelii/1-236), nomascus_leucogenys/1-236), (((((cercocebus_atys/1-236, mandrillus_leucophaeus/1-236), papio_anubis/1-236), ((macaca_fascicularis/1-236, macaca_mulatta/1-236), macaca_nemestrina/1-236)), chlorocebus_sabaeus/1-236), (rhinopithecus_bieti/1-236, rhinopithecus_roxellana/1-236))), (aotus_nancymaae/1-236, (callithrix_jacchus/1-236, (cebus_capucinus/1-236, saimiri_boliviensis_boliviensis/1-236)))), carlito_syrichta/1-236), ((microcebus_murinus/1-236, (prolemur_simus/1-236, propithecus_coquereli/1-236)), otolemur_garnettii/1-236))
